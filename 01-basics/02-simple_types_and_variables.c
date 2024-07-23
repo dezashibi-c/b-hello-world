@@ -41,6 +41,16 @@ int main(void)
     // Double variable: Stores double-precision decimal numbers
     double local_double = 2.71828;
 
+    /**
+     * The `printf` function:
+     * `printf` is a standard library function in C used to print formatted output
+     * to the screen. The function takes a format string followed by a list of
+     * variables to be printed. The format string can include format specifiers
+     * like %d for integers, %c for characters, %f for floating-point numbers,
+     * and %lf for double-precision numbers. More details on format specifiers
+     * and usage will be provided later on.
+     */
+
     // Printing the values of the variables
     printf("Global Integer: %d\n", global_int);
     printf("Local Integer: %d\n", local_int);
