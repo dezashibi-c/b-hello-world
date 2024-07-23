@@ -72,6 +72,5 @@ int main(void)
     printf("Modified Local Float: %.2f\n", local_float);
     printf("Modified Local Double: %.5f\n", local_double);
 
-    // Returning 0 to indicate that the program ran successfully
     return 0;
 }
