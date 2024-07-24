@@ -3,8 +3,8 @@
 //    File: 01-other_types_and_typedef.c
 //    Date: 2024-07-23
 //    Author: Navid Dezashibi
-//    Contact: navid@dezashibi.com | https://github.com/dezashibi
-//    Website: https://www.dezashibi.com
+//    Contact: navid@dezashibi.com
+//    Website: https://www.dezashibi.com | https://github.com/dezashibi
 //    License:
 //     Please refer to the LICENSE file in the repository or website for more information
 //     about the licensing of this work. If you have any questions or concerns,
