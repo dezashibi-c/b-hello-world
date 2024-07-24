@@ -1,25 +1,23 @@
 # Hello World (Beginner)
 
-How to get started in C as fast as possible.
+Get started with C as quickly as possible.
 
-## What is `Hello World` project is all about?
+## What is the `Hello World` project all about?
 
-This repository is meant to include short codes with enough explanations to help readers to get started in `C` following idiomatic and standard way of thinking in `C` but without complicated and "too much" opinionated design decisions.
+This repository contains concise code examples with sufficient explanations to help readers begin programming in C. The focus is on idiomatic and standard C practices without complicated or overly opinionated design decisions.
 
-**NOTE: For now there is no build system and no `Makefile` just one file examples**
+**NOTE: Currently, there is no build system or `Makefile`—just single file examples.**
 
-## Setup the compiler
+## Setting Up the Compiler
 
-Actually there are lots and lots of materials on this pretty much everywhere, and I think if you're here you probably have it already installed right now, but there are some rule of thumbs though:
+There are numerous resources available for setting up a C compiler, and if you're here, you likely have one installed. This guide assumes you're familiar with command-line compilation using `gcc` or `clang` on POSIX operating systems. If you prefer using an IDE like CLion or Visual Studio 2022, feel free to consult specific resources for those tools.
 
-what I will go through is just command line compilations using `gcc`/`clang` style command argument in `POSIX` operating systems so feel free to search and find proper resources if you're using `CLion` or `Visual Studio 2022`.
+### An Alternative
 
-### An alternative
+The `Zig` programming language compiler can serve as a convenient, drop-in C compiler.
 
-`Zig` programming language compiler can really be used as a quick "just download and unzip" drop-in compiler.
-
-you can get it from [here](https://ziglang.org/learn/getting-started/#installing-zig), all you need is to install it and add it to your system path. you can even use it by relatively run it in command line like `../../zig/zig cc ....`. you get the idea.
+You can download it from [here](https://ziglang.org/learn/getting-started/#installing-zig). After installation, add it to your system path or use it directly from the command line with `../../zig/zig cc ...`. You get the idea.
 
 ## LICENSE
 
-Please check [this file](https://github.com/dezashibi-c-projects/.github/blob/main/LICENSE)
+Please check the [LICENSE file](https://github.com/dezashibi-c-projects/.github/blob/main/LICENSE).
