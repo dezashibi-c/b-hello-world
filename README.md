@@ -6,7 +6,7 @@ Get started with C as quickly as possible.
 
 This repository contains concise code examples with sufficient explanations to help readers begin programming in C. The focus is on idiomatic and standard C practices without complicated or overly opinionated design decisions.
 
-**NOTE: Currently, there is no build system or `Makefile`—just single file examples.**
+**NOTE: I've purposefully have used `.exe` for target extension files in examples, it makes the `Makefile` and the compile commands can be used on windows and linux the same.**
 
 ## Setting Up the Compiler
 

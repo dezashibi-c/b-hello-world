@@ -13,8 +13,8 @@
 // *  Description: A minimal C program consists of one `.c` file that must be compiled
 // *               using a C compiler such as `gcc`, `clang`, `zig cc`, `tcc`, etc.
 // *               To compile the program, type:
-// *               `<path to your compiler> -o <filename.exe or .out> <file.c>`
-// *               Example: `gcc -o 01-hello_world.out 01-hello_world.c`
+// *               `<path to your compiler> -o <filename.exe or .exe> <file.c>`
+// *               Example: `gcc -o 01-hello_world.exe 01-hello_world.c`
 // ***************************************************************************************
 
 /**

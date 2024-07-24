@@ -79,7 +79,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -pedantic
 
 # Executable name
-TARGET = multifile_project.out
+TARGET = multifile_project.exe
 
 # Source files
 SRCS = main.c math_utils.c
@@ -129,13 +129,13 @@ A Makefile is a special file that contains a set of directives used by the `make
       make
       ```
 
-    - This command will use the rules defined in the Makefile to compile the project. The resulting executable will be named `multifile_project.out`.
+    - This command will use the rules defined in the Makefile to compile the project. The resulting executable will be named `multifile_project.exe`.
 
 3. **Running the compiled program**:
     - After compilation, run the executable with the following command:
 
       ```sh
-      ./multifile_project.out
+      ./multifile_project.exe
       ```
 
     - This will execute the program, and you should see the following output:

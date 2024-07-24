@@ -22,7 +22,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -pedantic
 
 # Executable name
-TARGET = multifile_project.out
+TARGET = multifile_project.exe
 
 # Source files
 SRCS = main.c math_utils.c
