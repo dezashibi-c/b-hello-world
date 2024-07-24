@@ -33,6 +33,10 @@ OBJS = $(SRCS:.c=.o)
 # Default target
 all: $(TARGET)
 
+# Run the target
+run: $(TARGET)
+	./$(TARGET)
+
 # Rule to link the object files and create the executable
 $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS)

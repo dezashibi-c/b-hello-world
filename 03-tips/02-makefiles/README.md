@@ -90,17 +90,21 @@ OBJS = $(SRCS:.c=.o)
 # Default target
 all: $(TARGET)
 
+# Run the target
+run: $(TARGET)
+    ./$(TARGET)
+
 # Rule to link the object files and create the executable
 $(TARGET): $(OBJS)
- $(CC) $(CFLAGS) -o $(TARGET) $(OBJS)
+    $(CC) $(CFLAGS) -o $(TARGET) $(OBJS)
 
 # Rule to compile source files into object files
 %.o: %.c
- $(CC) $(CFLAGS) -c $< -o $@
+    $(CC) $(CFLAGS) -c $< -o $@
 
 # Clean up the build files
 clean:
- rm -f $(TARGET) $(OBJS)
+    rm -f $(TARGET) $(OBJS)
 
 # Phony targets
 .PHONY: all clean
