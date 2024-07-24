@@ -165,3 +165,15 @@ This will remove the compiled executable and the object files, allowing you to s
     - `$(TARGET)`: The rule to link object files and create the executable.
     - `%.o: %.c`: A pattern rule to compile source files into object files.
     - `clean`: A rule to remove the compiled executable and object files.
+
+## Author
+
+Navid Dezashibi
+
+- Email: <navid@dezashibi.com>
+- GitHub: [@dezashibi](https://github.com/dezashibi)
+- Website: [https://www.dezashibi.com](https://www.dezashibi.com)
+
+## License
+
+Please refer to the LICENSE file in the repository or website for more information about the licensing of this work. If you have any questions or concerns, please feel free to contact me at the email address provided above.
