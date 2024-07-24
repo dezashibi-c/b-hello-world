@@ -78,7 +78,7 @@ int subtract(int a, int b)
     - Compile the files together using the `gcc` compiler (or any other C compiler) with the following command:
 
       ```sh
-      gcc -o multifile_project main.c math_utils.c
+      gcc -o multifile_project.out main.c math_utils.c
       ```
 
     - This command tells the compiler to compile `main.c` and `math_utils.c` together and produce an executable named `multifile_project`.
@@ -88,7 +88,7 @@ int subtract(int a, int b)
     - After compilation, run the executable with the following command:
 
       ```sh
-      ./multifile_project
+      ./multifile_project.out
       ```
 
     - This will execute the program, and you should see the following output:
