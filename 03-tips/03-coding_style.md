@@ -63,3 +63,17 @@ I generally avoid excessive comment blocks at the top of files unless necessary.
 }
 
 ```
+
+- Get used to writing document comment block for functions and function macros like this:
+
+```c
+/**
+ * @brief a brief description of what it does
+ *
+ * This macro of function ......
+ * .... rest of the more detailed description.
+ *
+ * @param param description of the parameter.
+ * @return description of function return.
+ */
+```
