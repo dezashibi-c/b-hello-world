@@ -38,3 +38,7 @@ I generally avoid excessive comment blocks at the top of files unless necessary.
   - e.g., `my_type_get_whatever_data`
   - e.g., `my_type_delete`
   - Also, don't hesitate to use some macros to simplify code where appropriate.
+- I would prefer to connect `*` to the types when defining theme and never use multiple definition to prevent stupid problems
+  - Types like `char*`, `int*`, `MyStruct*` are way more readable to me than I put `*` close to the variable name
+  - I don't like multiple definitions for pointers in one go, I prefer to define pointers in separate lines with proper initializations and other stuffs.
+- I prefer to continue the old-school way of putting '{' and '}' in separate lines. when I'm writing `C` I can't help myself but seeing the code like that.
