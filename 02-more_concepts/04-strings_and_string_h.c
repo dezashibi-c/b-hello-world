@@ -32,8 +32,8 @@
 #include <string.h>
 
 // Function declarations
-void print_string(const char *str);
-void concatenate_strings(char *dest, const char *src);
+void print_string(const char* str);
+void concatenate_strings(char* dest, const char* src);
 
 int main(void)
 {
@@ -81,7 +81,7 @@ int main(void)
     }
 
     // Find the first occurrence of a character in a string
-    char *char_pos = strchr(str3, 'W');
+    char* char_pos = strchr(str3, 'W');
     if (char_pos != NULL)
     {
         printf("First occurrence of 'W' in String 3: %s\n", char_pos);
@@ -92,7 +92,7 @@ int main(void)
     }
 
     // Find the first occurrence of a substring in a string
-    char *substr_pos = strstr(str3, "World");
+    char* substr_pos = strstr(str3, "World");
     if (substr_pos != NULL)
     {
         printf("First occurrence of \"World\" in String 3: %s\n", substr_pos);
@@ -108,14 +108,14 @@ int main(void)
 
 // Function definition for print_string
 // This function prints a string followed by a newline
-void print_string(const char *str)
+void print_string(const char* str)
 {
     printf("%s\n", str);
 }
 
 // Function definition for concatenate_strings
 // This function concatenates two strings
-void concatenate_strings(char *dest, const char *src)
+void concatenate_strings(char* dest, const char* src)
 {
     strcat(dest, src);
 }

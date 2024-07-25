@@ -33,7 +33,7 @@
 #define SQUARE(x) ((x) * (x))
 
 // Function declaration
-void swap(int *a, int *b);
+void swap(int* a, int* b);
 int add(int a, int b);
 int subtract(int a, int b);
 
@@ -45,11 +45,11 @@ int main(void)
     // Pointers
     int x = 10;
     int y = 20;
-    int *p_x = &x; // Pointer to x
-    int *p_y = &y; // Pointer to y
+    int* p_x = &x; // Pointer to x
+    int* p_y = &y; // Pointer to y
 
     printf("x: %d, y: %d\n", x, y);
-    printf("p_x: %p, p_y: %p\n", (void *)p_x, (void *)p_y);
+    printf("p_x: %p, p_y: %p\n", (void*)p_x, (void*)p_y);
 
     // Swapping values using pointers
     swap(p_x, p_y);
@@ -73,7 +73,7 @@ int main(void)
 
 // Function definition for swap
 // This function swaps the values of two integers using pointers
-void swap(int *a, int *b)
+void swap(int* a, int* b)
 {
     int temp = *a;
     *a = *b;

@@ -30,13 +30,13 @@
 #include <stdlib.h>
 
 // Function to print an array
-void print_array(int *array, int size);
+void print_array(int* array, int size);
 
 int main(void)
 {
     // Malloc example
     // Allocate memory for an array of 5 integers using malloc
-    int *array_malloc = (int *)malloc(5 * sizeof(int));
+    int* array_malloc = (int*)malloc(5 * sizeof(int));
     if (array_malloc == NULL)
     {
         perror("Failed to allocate memory using malloc");
@@ -53,7 +53,7 @@ int main(void)
 
     // Calloc example
     // Allocate memory for an array of 5 integers using calloc
-    int *array_calloc = (int *)calloc(5, sizeof(int));
+    int* array_calloc = (int*)calloc(5, sizeof(int));
     if (array_calloc == NULL)
     {
         perror("Failed to allocate memory using calloc");
@@ -75,7 +75,7 @@ int main(void)
 
 // Function definition for print_array
 // This function prints the elements of an array
-void print_array(int *array, int size)
+void print_array(int* array, int size)
 {
     for (int i = 0; i < size; i++)
     {

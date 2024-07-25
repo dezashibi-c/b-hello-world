@@ -36,7 +36,7 @@ int main(void)
 
     // perror: Used for error messages. It prints the string you pass to it followed by a description of the last error.
     // Syntax: perror(message);
-    FILE *file_ptr = fopen("non_existent_file.txt", "r");
+    FILE* file_ptr = fopen("non_existent_file.txt", "r");
     if (file_ptr == NULL)
     {
         perror("Error opening file");
@@ -65,7 +65,7 @@ int main(void)
 
     // FILE: A type used to represent a file stream. It is used for reading from or writing to files.
     // fopen: Opens a file and returns a FILE pointer. The first argument is the filename, and the second is the mode ("r" for reading, "w" for writing, etc.).
-    FILE *file = fopen("example.txt", "w");
+    FILE* file = fopen("example.txt", "w");
     if (file == NULL)
     {
         perror("Error opening file for writing");
@@ -82,7 +82,7 @@ int main(void)
 
     // fgets: Reads a string from a file or stdin. The string is stored in the provided buffer.
     // Syntax: fgets(buffer, size, FILE *stream);
-    FILE *input_file = fopen("example.txt", "r");
+    FILE* input_file = fopen("example.txt", "r");
     if (input_file == NULL)
     {
         perror("Error opening file for reading");

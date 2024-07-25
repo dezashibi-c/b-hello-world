@@ -32,7 +32,7 @@
 int main(void)
 {
     // Declare file pointers
-    FILE *file_pointer;
+    FILE* file_pointer;
     char filename[] = "example.txt";
     char data_to_write[] = "Hello, File Handling in C!\n";
     char buffer[100];
