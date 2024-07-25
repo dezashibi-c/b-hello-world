@@ -23,7 +23,7 @@ I generally avoid excessive comment blocks at the top of files unless necessary.
 // ***************************************************************************************
 ```
 
-## Naming Conventions
+## Naming Conventions and Styles
 
 - **Variables:** Use snake_case, e.g., `my_variable`.
 - **Function Names:** Use snake_case, e.g., `my_function`.
@@ -43,3 +43,23 @@ I generally avoid excessive comment blocks at the top of files unless necessary.
   - I don't like multiple definitions for pointers in one go, I prefer to define pointers in separate lines with proper initializations and other stuffs.
 - I prefer to continue the old-school way of putting '{' and '}' in separate lines. when I'm writing `C` I can't help myself but seeing the code like that.
 - I prefer using 4 spaces for indentations.
+
+## My Vscode Config
+
+```js
+{
+    BasedOnStyle: LLVM,
+    UseTab: Never,
+    IndentWidth: 4,
+    TabWidth: 4,
+    BreakBeforeBraces: Allman,
+    AllowShortIfStatementsOnASingleLine: false,
+    IndentCaseLabels: false,
+    ColumnLimit: 0,
+    AccessModifierOffset: -4,
+    NamespaceIndentation: All,
+    FixNamespaceComments: false,
+    PointerAlignment: Left
+}
+
+```
