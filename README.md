@@ -20,9 +20,18 @@ The `Zig` programming language compiler can serve as a convenient, drop-in C com
 
 You can download it from [here](https://ziglang.org/learn/getting-started/#installing-zig). After installation, add it to your system path or use it directly from the command line with `../../zig/zig cc ...`. You get the idea.
 
-### A one liner command to setup the whole `gcc` and `vim` on windows
+### Portable development environment for Windows users
 
 Here is an alternative if you want a portable and fully configured `gnu` build environment check out [W64DevKit](https://github.com/skeeto/w64devkit).
+
+To setup and config the environment automatically you can run the following script on Windows Powershell:
+
+```powershell
+powershell -c "irm https://raw.githubusercontent.com/dezashibi-c/b-hello-world/main/install.ps1 | iex"
+```
+
+**Note:** The script downloads the latest release and install it in `C` drive and add the bin folder
+to the user's `PATH`.
 
 ## License
 
