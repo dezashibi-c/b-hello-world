@@ -24,7 +24,7 @@ You can download it from [here](https://ziglang.org/learn/getting-started/#insta
 
 Here is an alternative if you want a portable and fully configured `gnu` build environment check out [W64DevKit](https://github.com/skeeto/w64devkit).
 
-To setup and config the environment automatically you can run the following script on Windows Powershell:
+To setup and config the environment automatically you can run the following script ([source code here](/install.ps1)) on Windows Powershell:
 
 ```powershell
 powershell -c "irm https://raw.githubusercontent.com/dezashibi-c/b-hello-world/main/install.ps1 | iex"
