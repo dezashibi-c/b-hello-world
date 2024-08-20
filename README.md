@@ -33,11 +33,11 @@ powershell -c "irm https://raw.githubusercontent.com/dezashibi-c/b-hello-world/m
 **Note:** The script downloads the latest release and install it in `C` drive and add the bin folder
 to the user's `PATH`.
 
-### Need `CMake` and `git`?
+### Need `CMake` and `git`, what about good old `DevCPP`?
 
 Don't worry I have that script for you as well!
 
-Same as `W64DevKit` installer, this script downloads latest `git` and `cmake`, extract them to `C` drive and add their corresponding bin filder to the user's `PATH`.
+Same as `W64DevKit` installer, this script downloads latest `DevCPP`, `git` and `cmake`, extract them to `C` drive and add their corresponding bin folder to the user's `PATH`, for `DevCPP` a shortcut to it's portable executable file also will be created on your desktop.
 
 ```powershell
 powershell -c "irm https://raw.githubusercontent.com/dezashibi-c/b-hello-world/main/install_extra.ps1 | iex"
@@ -50,3 +50,9 @@ powershell -c "irm https://raw.githubusercontent.com/dezashibi-c/b-hello-world/m
 Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) License.
 
 Please refer to [LICENSE](/LICENSE) file.
+
+## DevCPP License
+
+The [devcpp.zip](/devcpp.zip) file is built by downloading the latest version of `Dev-C++` from [here](https://github.com/Embarcadero/Dev-Cpp/releases/tag/v6.3), extracting it and re-packing it to `zip` instead of `7z` after configuration to work with `W64DevKit`.
+
+👉 This re-distribution complies with `Dev-C++` license [here](https://github.com/Embarcadero/Dev-Cpp/blob/master/LICENSE).

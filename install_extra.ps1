@@ -97,9 +97,44 @@ function Download-And-Setup {
     Write-Host "Removed temp file $tempFile"
 }
 
-# Main Process
+# Install git and cmake
 foreach ($tool in $toolsToDownload) {
     Download-And-Setup -repoOwner $tool.RepoOwner -repoName $tool.RepoName -assetPattern $tool.AssetPattern -extractCmd $tool.ExtractCmd -destination $tool.Destination -pathToAdd $tool.PathToAdd
 }
+
+# Install DevCPP
+$zipUrl = "https://raw.githubusercontent.com/dezashibi-c/b-hello-world/main/devcpp.zip"
+$devcppZipFilePath = "C:\devcpp.zip"
+$devcppExtractPath = "C:\"
+$devcppShortcutPath = [System.Environment]::GetFolderPath('Desktop') + "\Dev-C++.lnk"
+$devCppPortableExePath = "C:\devcpp\devcppPortable.exe"
+
+Write-Host "Downloading $zipUrl..."
+Invoke-WebRequest -Uri $zipUrl -OutFile $devcppZipFilePath -ErrorAction Stop
+Write-Host "Download complete."
+
+Write-Host "Extracting $devcppZipFilePath to $devcppExtractPath..."
+if (-not (Test-Path -Path $devcppExtractPath)) {
+    New-Item -ItemType Directory -Path $devcppExtractPath -Force
+}
+Add-Type -AssemblyName System.IO.Compression.FileSystem
+[System.IO.Compression.ZipFile]::ExtractToDirectory($devcppZipFilePath, "C:\")
+
+Write-Host "Extraction complete."
+
+Remove-Item -Path $devcppZipFilePath -Force
+Write-Host "Zip file deleted."
+
+# Create a shortcut to devcppPortable.exe on the desktop
+Write-Host "Creating shortcut on the desktop..."
+$wshShell = New-Object -ComObject WScript.Shell
+$shortcut = $wshShell.CreateShortcut($devcppShortcutPath)
+$shortcut.TargetPath = $devCppPortableExePath
+$shortcut.WorkingDirectory = $devcppExtractPath
+$shortcut.IconLocation = "$devCppPortableExePath, 0"
+$shortcut.Save()
+
+Write-Host "Shortcut created on the desktop: $devcppShortcutPath"
+
 
 Write-Host "All tools downloaded, extracted, and configured."
