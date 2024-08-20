@@ -10,7 +10,7 @@ This repository contains concise code examples with sufficient explanations to h
 
 ## Setting Up the Compiler
 
-There are numerous resources available for setting up a C compiler, and if you're here, you likely have one installed. This guide assumes you're familiar with command-line compilation using `gcc` or `clang` on POSIX or Wondows operating systems. 
+There are numerous resources available for setting up a C compiler, and if you're here, you likely have one installed. This guide assumes you're familiar with command-line compilation using `gcc` or `clang` on POSIX or Wondows operating systems.
 
 If you prefer using an IDE like CLion or Visual Studio 2022, feel free to consult specific resources for those tools.
 
@@ -32,6 +32,18 @@ powershell -c "irm https://raw.githubusercontent.com/dezashibi-c/b-hello-world/m
 
 **Note:** The script downloads the latest release and install it in `C` drive and add the bin folder
 to the user's `PATH`.
+
+### Need `CMake` and `git`?
+
+Don't worry I have that script for you as well!
+
+Same as `W64DevKit` installer, this script downloads latest `git` and `cmake`, extract them to `C` drive and add their corresponding bin filder to the user's `PATH`.
+
+```powershell
+powershell -c "irm https://raw.githubusercontent.com/dezashibi-c/b-hello-world/main/install_extra.ps1 | iex"
+```
+
+**👉 Together with `W64DevKit` you have now everything to start writing code, well go on!**
 
 ## License
 
