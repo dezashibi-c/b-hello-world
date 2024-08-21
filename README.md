@@ -33,7 +33,7 @@ powershell -c "irm https://raw.githubusercontent.com/dezashibi-c/b-hello-world/m
 **Note:** The script downloads the latest release and install it in `C` drive and add the bin folder
 to the user's `PATH`.
 
-### Need `CMake` and `git`, what about good old `DevCPP`?
+#### Need `CMake` and `git`, what about good old `DevCPP`?
 
 Don't worry I have that script for you as well!
 
