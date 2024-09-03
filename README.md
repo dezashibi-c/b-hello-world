@@ -45,6 +45,10 @@ powershell -c "irm https://raw.githubusercontent.com/dezashibi-c/b-hello-world/m
 
 **👉 Together with `W64DevKit` you have now everything to start writing code, well go on!**
 
+## Wait, What about a cmake template?, I really really like to start coding right away!
+
+Alright, Alright, I hear you, [check out here](https://github.com/dezashibi-c/cmake_template).
+
 ## License
 
 Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) License.
